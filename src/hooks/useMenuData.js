@@ -21,7 +21,7 @@ export function useMenuData() {
     if (!storedPassword) {
       localStorage.setItem(ADMIN_PASSWORD_KEY, DEFAULT_ADMIN_PASSWORD);
       storedPassword = DEFAULT_ADMIN_PASSWORD;
-      // Silent default password set, no toast for initial setup
+      
     }
     setAdminPassword(storedPassword);
     setIsPasswordProtected(true);
